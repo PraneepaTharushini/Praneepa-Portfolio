@@ -65,19 +65,19 @@ const Contact: React.FC = () => {
 
   const socialLinks = [
     {
-      icon: <Github size={24} />,
+      icon: Github,
       name: "GitHub",
-      url: "#",
+      url: "https://github.com/PraneepaTharushini",
       description: "Check out my repositories",
     },
     {
-      icon: <Linkedin size={24} />,
+      icon: Linkedin,
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/praneepa-tharushini-yapa-622601368/",
       description: "Let's connect professionally",
     },
     {
-      icon: <Mail size={24} />,
+      icon: Mail,
       name: "Email",
       url: "mailto:tharushini722@gmail.com",
       description: "Send me a direct message",
@@ -170,7 +170,7 @@ const Contact: React.FC = () => {
                     className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition-all duration-200 group"
                   >
                     <div className="mb-2 group-hover:scale-110 transition-transform duration-200">
-                      {social.icon}
+                      {typeof social.icon === 'function' ? React.createElement(social.icon, { size: 24 }) : social.icon}
                     </div>
                     <span className="font-medium">{social.name}</span>
                     <span className="text-xs text-gray-500 text-center mt-1">

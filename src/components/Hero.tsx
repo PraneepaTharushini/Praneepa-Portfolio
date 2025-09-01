@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
                 Education
               </h3>
               <p className="text-gray-600">Information Systems</p>
-              <p className="text-sm text-gray-500">Sabaragamuwa University</p>
+              <p className="text-sm text-gray-500">Sabaragamuwa University of Sri Lanka</p>
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg">

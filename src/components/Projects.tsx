@@ -6,6 +6,31 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
+      title: "Shinee Beauty Website",
+      description:
+        "A modern and responsive makeup brand website designed to showcase beauty products, tutorials, and trends. Features a clean UI for exploring brands and learning makeup techniques.",
+      image: "/HomePage.png", // Main image, can be changed
+      technologies: ["HTML", "CSS", "JavaScript"],
+      category: "Frontend",
+      date: "2025",
+      features: [
+        "Responsive product brand showcases",
+        "Makeup looks gallery & inspiration",
+        "Expert tips & tricks tutorials",
+        "Clean and accessible user interface"
+      ],
+      gallery: [
+        "/HomePage.png",
+        "/MakeupLooks.png",
+        "/Tutorials.png",
+        "/Products.png"
+      ],
+      githubUrl: "#", // Add link if available
+      liveUrl: "#", // Add link if available
+      status: "Completed",
+    },
+    {
+      id: 2,
       title: "E-Commerce Platform",
       description:
         "A full-stack e-commerce solution built with modern web technologies. Features include user authentication, product catalog, shopping cart, and payment integration.",
@@ -26,7 +51,7 @@ const Projects: React.FC = () => {
       status: "Completed",
     },
     {
-      id: 2,
+      id: 3,
       title: "Task Management System",
       description:
         "A collaborative task management application designed for team productivity. Includes project tracking, task assignment, and progress monitoring features.",
@@ -103,14 +128,27 @@ const Projects: React.FC = () => {
               viewport={{ once: true }}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              {/* Project Image */}
-              <div className="h-64 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🚀</div>
-                  <p className="text-gray-600">Project Screenshot</p>
-                  <p className="text-sm text-gray-500 mt-2">{project.title}</p>
+              {/* Project Image or Gallery */}
+              {project.gallery ? (
+                <div className="grid grid-cols-2 gap-2 bg-gradient-to-br from-primary-100 to-secondary-100 p-4">
+                  {project.gallery.map((img, idx) => (
+                    <img
+                      key={idx}
+                      src={img}
+                      alt={`${project.title} screenshot ${idx + 1}`}
+                      className="object-cover rounded-lg w-full h-40 border"
+                    />
+                  ))}
                 </div>
-              </div>
+              ) : (
+                <div className="h-64 bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="text-6xl mb-4">🚀</div>
+                    <p className="text-gray-600">Project Screenshot</p>
+                    <p className="text-sm text-gray-500 mt-2">{project.title}</p>
+                  </div>
+                </div>
+              )}
 
               <div className="p-6">
                 {/* Project Header */}
