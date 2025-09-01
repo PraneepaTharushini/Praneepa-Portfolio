@@ -25,52 +25,52 @@ const Projects: React.FC = () => {
         "/Tutorials.png",
         "/Products.png"
       ],
-      githubUrl: "#", // Add link if available
+      githubUrl: "https://github.com/PraneepaTharushini/Shinee-Website", // Add link if available
       liveUrl: "#", // Add link if available
       status: "Completed",
     },
-    {
-      id: 2,
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce solution built with modern web technologies. Features include user authentication, product catalog, shopping cart, and payment integration.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-      category: "Full Stack",
-      date: "2024",
-      features: [
-        "User authentication and authorization",
-        "Product catalog with search and filtering",
-        "Shopping cart and checkout process",
-        "Payment integration with Stripe",
-        "Admin dashboard for inventory management",
-        "Responsive design for all devices",
-      ],
-      githubUrl: "#",
-      liveUrl: "#",
-      status: "Completed",
-    },
-    {
-      id: 3,
-      title: "Task Management System",
-      description:
-        "A collaborative task management application designed for team productivity. Includes project tracking, task assignment, and progress monitoring features.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-      category: "Frontend",
-      date: "2024",
-      features: [
-        "Real-time collaboration features",
-        "Task creation and assignment",
-        "Project timeline and milestones",
-        "Team member management",
-        "Progress tracking and analytics",
-        "Notifications and reminders",
-      ],
-      githubUrl: "#",
-      liveUrl: "#",
-      status: "In Progress",
-    },
+    // {
+    //   id: 2,
+    //   title: "E-Commerce Platform",
+    //   description:
+    //     "A full-stack e-commerce solution built with modern web technologies. Features include user authentication, product catalog, shopping cart, and payment integration.",
+    //   image: "/api/placeholder/600/400",
+    //   technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+    //   category: "Full Stack",
+    //   date: "2024",
+    //   features: [
+    //     "User authentication and authorization",
+    //     "Product catalog with search and filtering",
+    //     "Shopping cart and checkout process",
+    //     "Payment integration with Stripe",
+    //     "Admin dashboard for inventory management",
+    //     "Responsive design for all devices",
+    //   ],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    //   status: "Completed",
+    // },
+    // {
+    //   id: 3,
+    //   title: "Task Management System",
+    //   description:
+    //     "A collaborative task management application designed for team productivity. Includes project tracking, task assignment, and progress monitoring features.",
+    //   image: "/api/placeholder/600/400",
+    //   technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+    //   category: "Frontend",
+    //   date: "2024",
+    //   features: [
+    //     "Real-time collaboration features",
+    //     "Task creation and assignment",
+    //     "Project timeline and milestones",
+    //     "Team member management",
+    //     "Progress tracking and analytics",
+    //     "Notifications and reminders",
+    //   ],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    //   status: "In Progress",
+    // },
   ];
 
   const categories = ["All", "Full Stack", "Frontend", "Backend", "QA Testing"];
