@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
             <button className="bg-transparent border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 inline-flex items-center gap-2">
               <Download size={20} />
               <a
-                href="./public/Praneepa_Tharushini_CV.pdf"
+                href="/Praneepa-Portfolio/Praneepa_Tharushini_CV.pdf"
                 download
               >
                 Download CV
