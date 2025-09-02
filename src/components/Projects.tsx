@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       title: "Shinee Beauty Website",
       description:
         "A modern and responsive makeup brand website designed to showcase beauty products, tutorials, and trends. Features a clean UI for exploring brands and learning makeup techniques.",
-      image: "/HomePage.png", // Main image, can be changed
+      image: "/Praneepa-Portfolio/HomePage.png", // Main image, can be changed
       technologies: ["HTML", "CSS", "JavaScript"],
       category: "Frontend",
       date: "2025",
@@ -20,10 +20,10 @@ const Projects: React.FC = () => {
         "Clean and accessible user interface"
       ],
       gallery: [
-        "/HomePage.png",
-        "/MakeupLooks.png",
-        "/Tutorials.png",
-        "/Products.png"
+        "/Praneepa-Portfolio/HomePage.png",
+        "/Praneepa-Portfolio/MakeupLooks.png",
+        "/Praneepa-Portfolio/Tutorials.png",
+        "/Praneepa-Portfolio/Products.png"
       ],
       githubUrl: "https://github.com/PraneepaTharushini/Shinee-Website", // Add link if available
       liveUrl: "#", // Add link if available
