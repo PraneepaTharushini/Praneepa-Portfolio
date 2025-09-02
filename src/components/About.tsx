@@ -13,12 +13,12 @@ import {
 
 const About: React.FC = () => {
   const skills = [
-    { icon: <Code size={24} />, name: "Frontend Development", level: 75 },
-    { icon: <Database size={24} />, name: "Backend Development", level: 65 },
-    { icon: <TestTube size={24} />, name: "Quality Assurance", level: 70 },
-    { icon: <BookOpen size={24} />, name: "Information Systems", level: 85 },
-    { icon: <Award size={24} />, name: "Accounting Principles", level: 80 },
-    { icon: <Target size={24} />, name: "Project Management", level: 70 },
+    { icon: <Code size={24} />, name: "Frontend Development", level: 60 },
+    { icon: <Database size={24} />, name: "Backend Development", level: 20 },
+    { icon: <TestTube size={24} />, name: "Object-Oriented Programming", level: 75 },
+    { icon: <BookOpen size={24} />, name: "SQL", level: 65 },
+    { icon: <Award size={24} />, name: "Accounting Principles", level: 60 },
+    { icon: <Target size={24} />, name: "Git & GitHub", level: 60 },
   ];
 
   const values = [
